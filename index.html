@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+
+    <!--Style CSS-->
+    <link rel="stylesheet" href="style/main.css"> <!--Estilos padrão-->
+    <link rel="stylesheet" href="style/responsive.css"> <!--Responsividade-->
+
+    <!--FAVICON - Não deu certo com icone 16x16-->
+    <link rel="shortcut icon" href="/img/N_Netflix_Logo.png" type="image/x-icon">
+    <link rel="icon" href="/img/N_Netflix_Logo.png" type="image/x-icon">
+
+    <!--OWL Carousel-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+</head>
+
+<body>
+    <header> <!--Div semântica para cabeçalho-->
+        <div class="container">
+            <h2 class="logo"><img src="img/logo_Netflix.png"></h2>
+            <nav class="menu"> <!--Menu de navegação-->
+                <div class="left_nav">
+                    <a href="#">Inicio</a> <!--alt + shift + down-->
+                    <a href="#">Series</a>
+                    <a href="#">Filmes</a>
+                    <a href="#">Bombando</a>
+                    <a href="#">Minha Lista</a>
+                </div>
+                <div class="right_nav">
+                    <a href="#"><i class="fas fa-search"></i></a>
+                    <a href="#">INFANTIL</a>
+                    <a href="#"><i class="fas fa-bell"></i></a>
+                    <a href="#"><img src="img/perfil_adriano.JPG"></a>
+                    <a href="#"><i class="fas fa-sort-down"></i></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="filme-principal">
+            <div class="container">
+                <h3 class="titulo"><img src="img/Stranger-Things-Logo.png"></h3>
+                <p class="descricao">Quando um garoto desaparece, a cidade toda participa nas buscas. Mas o que encontram são segredos, forças sobrenaturais e uma menina.</p>
+                <div class="botoes">
+                    <button role="button" class="botao_a">
+                        <i class="fas fa-play"></i>
+                        Assistir
+                    </button>
+                    <button role="button" class="botao_b">
+                        <i class="fas fa-info-circle"></i>
+                        Mais Informações
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="carousel-movies">
+        <div class="owl-carousel owl theme">
+            <div class="item"><img class=".box-filme" src="img/lupin.jpg"></div>
+            <div class="item"><img class=".box-filme" src="img/katla.jpg"></div>
+            <div class="item"><img class=".box-filme" src="img/cidadegelo.jpg"></div>
+            <div class="item"><img class=".box-filme" src="img/sweetthoot.jpg"></div>
+            <div class="item"><img class=".box-filme" src="img/Elite.jpg"></div>
+            <div class="item"><img class=".box-filme" src="img/cidadegelo.jpg"></div>
+            <div class="item"><img class=".box-filme" src="img/katla.jpg"></div>
+            <div class="item"><img class=".box-filme" src="img/sweetthoot.jpg"></div>
+        </div>
+
+    </div>
+
+    <!--JavaScript Commands-->
+
+    <!--Fonte Awesome-->
+    <script src="https://kit.fontawesome.com/f406372027.js" crossorigin="anonymous"></script>
+
+    <!--OWL Carousel-->
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+</body>
+</html>

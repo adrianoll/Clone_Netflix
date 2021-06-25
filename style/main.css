@@ -1,0 +1,177 @@
+/*Variáveis no CSS para facilitar*/
+:root{
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+/*Reset CSS*/ /*Cada navegador tem configurações diferentes*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box; /*Para os elementos não empurrarem a caixa*/
+}
+
+body{
+    background:var(--preta);
+    font-family: Arial, Helvetica, serif; /*Pode chamar externo no Google fonts*/
+    color: white;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:flex-start;
+    padding: 0;
+}
+
+header .container .menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 80vw;
+}
+
+header .logo img{
+    max-width: 10vw; 
+    margin-right: 30px;
+}
+
+header nav .left_nav{  /*Tive que fazer pra alinharam*/
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header nav .left_nav a{
+    text-decoration: none;
+    color: #FFF;
+    margin-right: 15px;
+    font-weight: 300;
+    font-size: 1.25vw;
+    transition: .3s ease all; /*Dá efeito na transição*/
+}
+
+header nav .left_nav a:hover{
+    color: #AAA;
+}
+
+header nav .right_nav{  /*Tive que fazer pra alinharam*/
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header nav > .right_nav a{
+    text-decoration: none;
+    color: #FFF;
+    margin-right: 10px;
+    font-weight: 270;
+    font-size: 1.25vw;
+}
+
+header nav .right_nav a img{
+    max-width: 3.5vw;
+    border-radius: 12%;
+}
+
+/**********************************/
+/*FILME PRINCIPAL*/
+.filme-principal{
+    font-size: 12px;
+    background:linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url(/img/StrangerThings.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 400px;
+    /*TESTE*/
+    background-position: bottom center; /*Posiciona imagem*/
+}
+
+.filme-principal .titulo{
+    margin-top: -10%; /*Em % é mais fluido. Responsividade*/
+}
+
+.filme-principal .titulo img{
+    width: 50%; /*60% do container - mais reponsivo */
+    max-width: 25vw;
+}
+
+.filme-principal .descricao{
+    margin-top: 1px;
+    margin-bottom: 10px;
+    max-width: 50%;
+    font-size: 1.7vw; /*A fonte varia com o tamanho da tela*/
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 60%;  
+}
+
+/* BOTÕES */
+.botoes{
+    max-width: 100%;
+    /*test*/
+    display: flex;
+    flex-direction: row;
+}
+
+.botoes i{      /*Font Awesome*/
+    margin-right: 0.3vw;
+}
+
+.botoes .botao_a{
+    font-size: 1.25vw; /*14px*/
+    font-family:Helvetica, sans-serif;
+    background-color: white;
+    border: none;
+    color: black;
+    margin-right: 0.4vw;
+    padding: 0.7vw 2.5vw;/*10px 30px;*/
+    border-radius: 8%;
+    font-weight: bold;
+    cursor: pointer; /*muda o cursor*/
+    transition: .3s ease all; /*Dá efeito na transição*/
+}
+
+.botoes .botao_b{
+    font-size: 1.25vw; /*14px*/
+    font-family:Helvetica, sans-serif;
+    background-color: rgba(139, 139, 139, 0.5);
+    border: none;
+    color: white;
+    margin-right: 0.3vw;
+    padding: 0.7vw 2.5vw;/*10px 30px;*/
+    border-radius: 8%;
+    font-weight: bold;
+    cursor: pointer; /*muda o cursor*/
+    transition: .3s ease all; /*Dá efeito na transição*/
+}
+
+.botoes .botao_a:hover{
+    background-color: rgba(149,149,149,1);
+}
+
+.botoes .botao_b:hover{
+    background-color: rgba(139, 139, 139, 0.2);
+}
+
+/*********************************/
+/*Carousel*/
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carousel-movies{
+    margin-top: 5px;
+}
